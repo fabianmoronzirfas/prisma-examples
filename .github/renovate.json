@@ -1,17 +1,4 @@
 {
-  "extends": ["config:base", "docker:disable"],
-  "automerge": true,
-  "major": {
-    "automerge": false
-  },
-  "masterIssue": true,
-  "baseBranches": ["latest"],
-  "packageRules": [
-    {
-      "baseBranchList": ["latest"],
-      "packageNames": ["nexus-plugin-prisma"],
-      "enabled": false
-    }
-  ],
-  "ignoreDeps": ["@prisma/cli", "@prisma/client"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["@inpyjamas"]
 }
